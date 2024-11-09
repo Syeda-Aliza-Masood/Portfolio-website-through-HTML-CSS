@@ -1,0 +1,519 @@
+/*-------------------------------------------- Font Style -----------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------- NAVBAR OR HEADER ----------------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #213E60;
+    width: 100vw; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    margin-left: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F4F1DE;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 50px; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #F4F1DE;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #E68C3A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo a:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #E68C3A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*--------------------------------------------- SOCIAL MEDIA ICONS ----------------------------------------------------*/
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 3rem;
+    position: fixed; 
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.icons .fa-brands {
+    color: #E68C3A;
+    font-size: 1.7rem;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #213E60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*---------------------------------------------- MAIN WORKPLACE -------------------------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-container {
+    background: #EDEDED;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    padding-top: 60px; /* Keep space for header */
+}
+
+.content {
+    text-align: center;
+    margin: 0;
+}
+
+.content .intro {
+    font-size: 1.5rem;
+    color: #E68C3A;
+}
+
+.content .intro span {
+    color: #213E60;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #213E60;
+}
+
+.content .detail {
+    font-size: 1.1rem;
+    color: #213E60;
+    max-width: 38rem;
+    margin: 1.1rem auto 3rem auto;
+    line-height: 1.8rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-container button {
+    border: 0.1rem solid #213E60;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: #fff;
+}
+
+.btn-container button:nth-child(1) {
+    background: #E68C3A;
+}
+
+.btn-container button:nth-child(2) {
+    background: #213E60;
+}
+
+.btn-container button:nth-child(1):hover {
+    background: #213E60;
+    color: #fff;
+}
+
+.btn-container button:nth-child(2):hover {
+    background: #E68C3A;
+    color: #fff;
+}
+
+
+/*--------------------------------------------- About ME ----------------------------------------------------*/
+.about-section {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    width: 100vw;            /* Full width of the viewport */
+    height: 100vh;           /* Full height of the viewport */
+    padding: 20px 0;         /* Reduced vertical padding */
+    background-color: #EDEDED;  /* Beige background */
+    box-sizing: border-box;   /* Ensure padding is included in the height/width */
+    margin: 0;               /* Remove default margin */
+}
+
+/* Container Styling */
+.about-container {
+    max-width: 900px;
+    width: 100%;
+    height: auto;  /* Adjust height to content */
+    background-color: #213E60;  /* Navy blue background */
+    padding: 20px 40px;         /* Adjust padding */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: left;
+    color: #EDEDED;  /* Light text for contrast */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Make sure the content is vertically stacked */
+    align-items: center; /* Center content horizontally within the card */
+}
+
+/* Heading Style */
+.text-center {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #EDEDED;  /* Light text for heading */
+    margin-bottom: 20px;  /* Reduced bottom margin */
+}
+
+/* About Content Styling */
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #EDEDED;  /* Corrected text color */
+    margin-bottom: 15px;
+}
+
+.about-content p strong {
+    color: #FFCC99;  /* Beige for highlighted text */
+}
+
+.about-content p em {
+    color: #FFCC99;  /* Beige for emphasis */
+}
+
+/* Icon and Text Alignment */
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-text i {
+    font-size: 1.5rem;
+    color: #FFCC99;  /* Beige color for icons */
+    margin-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-center {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about-container {
+        padding: 20px 30px;
+    }
+}
+
+/*------------------------------------------------ Skills section ------------------------------------------------------*/
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    min-height: 100vh; /* Makes the section span the full height of the viewport */
+}
+
+.skills-section h2 {
+    font-size: 36px;
+    color: #003366; /* Navy Blue */
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Each skill card */
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 50px 20px; /* Increased vertical padding by 5% (from 20px to 25px) */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    color: #003366; /* Navy Blue */
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #6c757d; /* Beige-like text color */
+    font-size: 16px;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+
+/*--------------------------------------------- Projects Section -------------------------------------------------------*/
+
+.projects-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #EDEDED;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 350px; /* Increased height */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content within the card */
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+.project-card h3 {
+    color: #003366; 
+    font-size: 24px; /* Set the font size for the entire heading */
+}
+
+.project-card h3 span {
+    display: block;
+    font-size: 24px; /* You can adjust the font size for "Builder" separately if needed */
+    color: #003366; /* You can keep the same color for consistency */
+    margin-top: 20px; /* Adds space between "Resume" and "Builder" */
+}
+
+.project-card p {
+    color: #6c757d;
+    font-size: 16px;
+    margin: 15px 0;
+    flex-grow: 1; /* Allow the text area to grow to fit the available space */
+}
+.project-link {
+    background-color: #E68C3A; 
+    color: #fff; /* Changed text color to white */
+    border: 0.1rem solid #213E60; 
+    border-radius: 10px; 
+    padding: 12px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    display: block; /* Make button a block element */
+    margin: 0 auto; /* Center the button */
+    text-decoration: none; /* Remove underline */
+}
+
+.project-link:hover {
+    background-color: #213E60; 
+    color: #E68C3A;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 0.2rem solid #213E60;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+/*--------------------------------------------- Contact ME ----------------------------------------------------*/
+.contact-section {
+    background-color: #EDEDED;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-top: 0; /* Ensure no extra space above */
+}
+
+.form-map-container {
+    display: flex;
+    gap: 40px; /* Space between form and map */
+    width: 100%;
+    max-width: 1200px; /* Maximum width for container */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+}
+
+h1 {
+    color: #213E60;
+    margin-bottom: 20px;
+    text-align: left; /* Left align the heading */
+    width: 100%;
+}
+
+.form-label {
+    color: #213E60;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%; /* Make label take full width */
+}
+
+.form-control {
+    border: 1px solid #213E60;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #213E60;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: #E68C3A;
+    color: #fff; /* Changed text color to white */
+    border: 0.1rem solid #213E60;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.btn-success:hover {
+    background-color: #213E60;
+    color: #E68C3A;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+    border: 0.2rem solid #213E60;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+
+/* Map container styling */
+.map-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*--------------------------------------------- Footer Styles ----------------------------------------------------------*/
+
+.footer {
+    background-color: #213E60; 
+    color: #F4F1DE; 
+    padding: 15px 5px; 
+    text-align: center; 
+    position: relative; 
+}
+.footer .social-icons {
+    margin: 20px 0; 
+}
+.footer .social-icons a {
+    color: #F4F1DE; 
+    margin: 0 15px; 
+    font-size: 2rem; 
+    transition: color 0.3s ease; 
+}
+.footer .social-icons a:hover {
+    color: #E68C3A; 
+}
+.footer p {
+    margin: 10px 0; 
+    font-size: 0.9rem;
+}
+
+/*----------------------------------- Media Queries for Responsive Design --------------------------------------------*/
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px; 
+    }
+
+    .footer .social-icons a {
+        font-size: 1.5rem; 
+    }
+
+    .footer p {
+        font-size: 0.8rem; 
+    }
+}

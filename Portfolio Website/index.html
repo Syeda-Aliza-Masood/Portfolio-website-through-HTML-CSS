@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Aliza Masood Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!---------------------------------------------------- Nav Bar ---------------------------------------------------------->
+<nav>
+    <div class="logo">
+        <a href="#">Portfolio Website</a>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!---------------------------------------------- Home Section ---------------------------------------------------------->
+
+<section id="home">
+    <div class="main-container">
+        <div class="icons">
+            <a href="https://github.com/Syeda-Aliza-Masood" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/syeda-aliza-masood-550a73283/?trk=public-profile-join-page" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="content">
+            <p class="intro">I Am <span>Syeda Aliza Masood</span></p>
+            <h1>Electrical Engineer.</h1>
+            <p class="detail">I am a recent graduate in Electrical Engineering with a focus on Computer Systems, proficient in Front-end Development, Python, and with hands-on experience in machine learning, image processing using OpenCV, and integrating robotic systems.</p>
+            <div class="btn-container">
+                <button onclick="window.location.href='mailto:salizamasood@gmail.com?subject=Hiring%20Inquiry&body=Hello%20Syeda%20Aliza%20Masood,'">Hire Me</button>
+                <a href="https://github.com/Syeda-Aliza-Masood" target="_blank"><button>View Projects</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------- About Section ---------------------------------------------------------->
+
+<section id="about" class="about-section">
+    <div class="about-container">
+        <h1 class="text-center">About Me</h1>
+        <div class="about-content">
+            <p>Hello! I’m <strong>Syeda Aliza Masood</strong></p>
+            <p>I am a dedicated Electrical Engineering graduate specializing in Computer Systems. With a solid foundation in machine learning, front-end development, and image processing, I strive to create innovative solutions that bridge the gap between technology and user needs. My passion for continuous learning and improving user experience drives me to take on challenging projects and deliver impactful results.</p>
+            <p>Let’s connect and explore how I can bring value to your next project.</p>
+            <p><em>Thank you for visiting!</em></p>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------- Skill Section ---------------------------------------------------------->
+
+<section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Proficient in creating semantic and accessible web pages.</p>
+        </div>
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Expert in designing responsive layouts and modern styling.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Python</h3>
+            <p>Experienced in data analysis, machine learning, and web development.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Machine Learning</h3>
+            <p>Skilled in using YOLOv5 for real-time defect detection and optimizing models for fabric inspection systems.</p>
+        </div>
+    </div>
+</section>
+
+<!----------------------------------------------- Projects Section ---------------------------------------------------->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Static Resume <span>Builder</span></h3> <!-- Word "Builder" moved to next line -->
+            <p>Interactive Resume Builder using HTML, CSS, and TypeScript. This project allows users to create personalized resumes statically.</p>
+            <a href="https://github.com/Syeda-Aliza-Masood/Hackathon-Milestones/tree/main/Milestone%201" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Dynamic Resume <span>Builder</span></h3> <!-- Word "Builder" moved to next line -->
+            <p>Interactive Resume Builder using HTML, CSS, and TypeScript. This project allows users to create personalized resumes dynamically.</p>
+            <a href="https://github.com/Syeda-Aliza-Masood/Hackathon-Milestones/tree/main/Milestone%203" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Editable Resume <span>Builder</span></h3> <!-- Word "Builder" moved to next line -->
+            <p>Interactive Resume Builder using HTML, CSS, and TypeScript. This project allows users to edit their resumes.</p>
+            <a href="https://github.com/Syeda-Aliza-Masood/Hackathon-Milestones/tree/main/Milestone%204" target="_blank" class="project-link">View Project</a>
+        </div>
+    </div>
+</section>
+
+<!----------------------------------------------- Contact Section ---------------------------------------------------->
+
+<section id="contact" class="contact-section">
+    <div class="form-map-container">
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" required>
+
+                <label class="form-label" for="contact-no">contact no</label>
+                <input class="form-control" type="number" id="number" name="number" required>
+
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn-success">Send</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <img src="map.png" alt="Map Location" class="map-image">
+        </div>
+    </div>
+</section>
+
+
+
+<!-------------------------------------------------- Footer Section ---------------------------------------------------->
+
+<footer class="footer" id="footer">
+    <div class="social-icons">
+        <a href="https://github.com/Syeda-Aliza-Masood" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/syeda-aliza-masood-550a73283/?trk=public-profile-join-page" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 Syeda Aliza Masood. All Rights Reserved.</p>
+</footer>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
